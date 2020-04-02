@@ -11,7 +11,7 @@
 	<groupId>com.learning.spring.boot.web</groupId>
 	<artifactId>myProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>myProject</name>
 	<description>First project with Spring Boot</description>
 
