@@ -3,7 +3,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <html>
 	<head>
-		<title>Web Application</title>
+		<title>Todo's App</title>
 		<link href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
