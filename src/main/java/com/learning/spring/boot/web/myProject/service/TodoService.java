@@ -12,13 +12,16 @@ import com.learning.spring.boot.web.myProject.model.Todo;
 
 @Service
 public class TodoService {
-	private static List<Todo> todos = new ArrayList<>();
-	private static int todoCount = 3;
+	private List<Todo> todos = new ArrayList<>();
+	private int todoCount = 0;
 
-	static {
+	public TodoService() {
+		super();
 		todos.add(new Todo(1, "admin", "Learn Spring MVC", new Date(), false));
 		todos.add(new Todo(2, "admin", "Learn Struts", new Date(), false));
 		todos.add(new Todo(3, "admin", "Learn Hibernate", new Date(), false));
+		todos.add(new Todo(0, "otherUser", "Learn Hibernate3", new Date(), false));
+		todoCount = todos.size();
 	}
 
 	public List<Todo> retrieveTodos(String user) {
