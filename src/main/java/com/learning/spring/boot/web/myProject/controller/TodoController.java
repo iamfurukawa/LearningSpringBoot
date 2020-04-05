@@ -36,6 +36,7 @@ public class TodoController {
 	@RequestMapping(value = "/list-todos", method = RequestMethod.GET)
 	public String showTodosList(ModelMap model) {
 		model.put("todos", todoService.retrieveTodos(getLoggedinUserName()));
+		model.put("name", getLoggedinUserName());
 		return "list-todos";
 	}
 	
