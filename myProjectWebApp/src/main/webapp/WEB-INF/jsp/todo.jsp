@@ -2,8 +2,8 @@
 <%@ include file="commons/navigation.jspf" %>
 <div class="container">
 	<h1>Add/Edit a Todo</h1>
-	<form:form method="post" action="" modelAttribute="todo">
-	<form:hidden path="id"/>
+	<form:form method="post" modelAttribute="todo">
+		<form:hidden path="id"/>	
 		<fieldset class="form-group">
 			<form:label path="desc">Description</form:label>
 			<form:input path="desc" class="form-control" name="desc" type="text" required="required"/>
